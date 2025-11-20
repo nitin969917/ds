@@ -59,7 +59,7 @@ int main()
         }else{
             while(top!=-1 && precedence(stack[top])>=precedence(c))
             {
-                printf("%c",c);
+                printf("%c",pop());
             }
             push(c);
         }
